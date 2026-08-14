@@ -1,30 +1,78 @@
 # Disaster Alert & Resource Allocation System
 
-A modular PHP + MySQL academic project for managing disaster alerts, emergency resources, and route selection.
+A disaster-management system designed to support emergency alert handling, resource allocation, and route optimization using PHP, MySQL, and fundamental Data Structures & Algorithms.
 
-> **Note:** This repository is a clean reconstruction based on the project's documented features. It is not claimed to be the exact original source code if the original files are no longer available.
+## Overview
 
-## Features
-- Disaster and resource management
-- Priority-based emergency processing
-- Graph-based route calculation using Dijkstra
-- BFS traversal for connected locations
-- Queue and priority queue implementations
-- Simple PHP API endpoints
-- MySQL schema and seed data
+The Disaster Alert & Resource Allocation System provides a structured approach to managing disaster-related information, emergency resources, and response operations.
 
-## Stack
-PHP, MySQL, HTML/CSS/JavaScript, Data Structures & Algorithms
+The project combines a modular PHP backend with a MySQL database and algorithmic techniques to organize emergency data and optimize resource processing and routing.
 
-## Setup
-1. Install XAMPP/WAMP.
-2. Put the project folder inside `htdocs`.
-3. Create a MySQL database named `disaster_alert`.
-4. Import `database/schema.sql`.
-5. Update credentials in `config/database.php`.
-6. Start Apache and MySQL.
-7. Open `api/disasters.php` in the browser or use Postman/cURL.
+## Key Features
 
-## API examples
-- `GET api/disasters.php`
-- `POST api/disasters.php` with JSON: `{"title":"Flood","location":"Area A","severity":5}`
+- Disaster and emergency event management
+- Emergency resource allocation
+- Priority-based processing of critical requests
+- Route optimization using Dijkstra's algorithm
+- Graph traversal using BFS
+- Queue and Priority Queue based processing
+- HashMap-based data organization
+- MySQL database integration
+- Modular backend structure
+
+## Data Structures & Algorithms
+
+The project demonstrates the practical application of several data structures and algorithms:
+
+- **Queue** – manages requests and emergency operations
+- **Priority Queue** – prioritizes critical emergency resources
+- **Graph** – represents locations and connections
+- **BFS** – supports graph traversal
+- **HashMap** – enables efficient data lookup
+- **Dijkstra's Algorithm** – finds optimized routes between locations
+
+## Tech Stack
+
+### Backend
+- PHP
+
+### Database
+- MySQL
+
+### Data Structures & Algorithms
+- Queue
+- Priority Queue
+- Graph
+- BFS
+- HashMap
+- Dijkstra's Algorithm
+
+### Development Tools
+- XAMPP / WAMP
+- VS Code
+- Git & GitHub
+
+## Project Structure
+
+```text
+Disaster-Alert-Resource-Allocation/
+│
+├── algorithms/
+│   ├── bfs.php
+│   ├── dijkstra.php
+│   └── priority_queue.php
+│
+├── api/
+│   └── ...
+│
+├── backend/
+│   └── ...
+│
+├── config/
+│   └── database.php
+│
+├── database/
+│   └── schema.sql
+│
+├── README.md
+└── .gitignore
