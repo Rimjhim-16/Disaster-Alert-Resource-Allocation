@@ -1,56 +1,35 @@
+````markdown
 # Disaster Alert & Resource Allocation System
 
-A disaster-management system designed to support emergency alert handling, resource allocation, and route optimization using PHP, MySQL, and fundamental Data Structures & Algorithms.
+A disaster-management system developed using **PHP and MySQL** to manage emergency alerts, prioritize resources, and optimize routes using Data Structures and Algorithms.
 
-## Overview
+## Features
 
-The Disaster Alert & Resource Allocation System provides a structured approach to managing disaster-related information, emergency resources, and response operations.
-
-The project combines a modular PHP backend with a MySQL database and algorithmic techniques to organize emergency data and optimize resource processing and routing.
-
-## Key Features
-
-- Disaster and emergency event management
-- Emergency resource allocation
-- Priority-based processing of critical requests
-- Route optimization using Dijkstra's algorithm
+- Disaster and emergency alert management
+- Priority-based resource allocation
+- Emergency request processing
+- Route optimization using Dijkstra's Algorithm
 - Graph traversal using BFS
 - Queue and Priority Queue based processing
-- HashMap-based data organization
 - MySQL database integration
 - Modular backend structure
 
 ## Data Structures & Algorithms
 
-The project demonstrates the practical application of several data structures and algorithms:
-
-- **Queue** – manages requests and emergency operations
-- **Priority Queue** – prioritizes critical emergency resources
-- **Graph** – represents locations and connections
-- **BFS** – supports graph traversal
-- **HashMap** – enables efficient data lookup
-- **Dijkstra's Algorithm** – finds optimized routes between locations
+- **Queue** — manages emergency requests and operations
+- **Priority Queue** — prioritizes critical emergency requests
+- **Graph** — represents locations and routes
+- **BFS** — performs graph traversal
+- **HashMap** — supports efficient data lookup
+- **Dijkstra's Algorithm** — finds optimized routes between locations
 
 ## Tech Stack
 
-### Backend
-- PHP
-
-### Database
-- MySQL
-
-### Data Structures & Algorithms
-- Queue
-- Priority Queue
-- Graph
-- BFS
-- HashMap
-- Dijkstra's Algorithm
-
-### Development Tools
-- XAMPP / WAMP
-- VS Code
-- Git & GitHub
+- **Backend:** PHP
+- **Database:** MySQL
+- **Frontend:** HTML, CSS, JavaScript
+- **Algorithms:** DSA, Graph Algorithms
+- **Tools:** XAMPP / WAMP, VS Code, Git, GitHub
 
 ## Project Structure
 
@@ -63,10 +42,10 @@ Disaster-Alert-Resource-Allocation/
 │   └── priority_queue.php
 │
 ├── api/
-│   └── ...
+│   └── disasters.php
 │
 ├── backend/
-│   └── ...
+│   └── graph_demo.php
 │
 ├── config/
 │   └── database.php
@@ -76,3 +55,60 @@ Disaster-Alert-Resource-Allocation/
 │
 ├── README.md
 └── .gitignore
+````
+
+## Setup
+
+### Prerequisites
+
+* XAMPP or WAMP
+* PHP
+* MySQL
+* Web browser
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Rimjhim-16/Disaster-Alert-Resource-Allocation.git
+```
+
+2. Move the project into the XAMPP/WAMP web directory.
+
+For XAMPP:
+
+```text
+C:\xampp\htdocs\
+```
+
+3. Start **Apache** and **MySQL**.
+
+4. Create a MySQL database named:
+
+```text
+disaster_alert
+```
+
+5. Import:
+
+```text
+database/schema.sql
+```
+
+6. Update the database credentials in:
+
+```text
+config/database.php
+```
+
+7. Open the project through your local server.
+
+## Author
+
+**Rimjhim Saxena**
+
+GitHub: https://github.com/Rimjhim-16
+
+```
+```
